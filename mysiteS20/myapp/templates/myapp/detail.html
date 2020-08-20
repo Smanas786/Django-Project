@@ -1,0 +1,22 @@
+{% extends 'myapp/base.html' %}
+
+{% block body_block %}
+    {% if top_list %}
+        <h2>This is Topic Page for:</h2>
+        <ol>
+            {% for top in top_list %}
+                <h3>{{ top.name}}</h3>
+                <h3>Category:</h3>
+                <ol>{{top.category}}</ol>
+                <h3>List of Courses:</h3>
+                {% for cour in c_list %}
+                    {% if cour.topic == top %}
+                        <ol>{{ cour.name }}</ol>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </ol>
+    {% else %}
+        <strong>There are no available topics!</strong>
+    {% endif %}
+{% endblock %}

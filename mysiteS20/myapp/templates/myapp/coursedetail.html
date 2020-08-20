@@ -1,0 +1,20 @@
+{% extends 'myapp/base.html' %}
+
+{% block body_block %}
+
+    <p>
+        Course Name: {{ cour.name }}<br>
+        Price {{ cour.price }}<br>
+        Interested Students {{ cour.interested }}<br>
+        {% if cour.for_everyone is False %}
+            <b>This course is not for everyone</b>
+        {% endif %}
+    </p>
+    <h1>Interest Form</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ InterestForm }}
+        <input type="submit" value="Save">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+h1 {
+    font-size: 22px;
+    color: #001aff;
+    background-color: coral;
+     position: static;
+}
+
+.hbar1 {
+    display: inline;margin: 15px;
+}

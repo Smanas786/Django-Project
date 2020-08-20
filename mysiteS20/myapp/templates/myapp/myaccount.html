@@ -1,0 +1,16 @@
+{% extends 'myapp/base.html' %}
+
+{% block body_block %}
+    <p>
+        First Name: {{ user.first_name }}<br>
+        Last Name: {{ user.last_name }}<br>
+        <h3>Interested In:</h3>
+        {% for inter in interested %}
+            {{ inter }}<br>
+        {% endfor %}
+        <h3>Order List:</h3>
+        {% for stud in stud_course %}
+            {{ stud }}<br>
+        {% endfor %}
+    </p>
+{% endblock %}

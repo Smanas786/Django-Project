@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: shah1ag@uwindsor.ca
+To: shah1ag@uwindsor.ca
+Date: Thu, 20 Aug 2020 15:31:33 -0000
+Message-ID: <159793749339.13152.9696556009314190999@DESKTOP-K21GINO>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MQ/5j7-a3f282bdc9d51d795c3e/
+
+Your username, in case you’ve forgotten: shah_anas
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
